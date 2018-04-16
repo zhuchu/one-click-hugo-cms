@@ -85,6 +85,9 @@
 
 /* Uncomment out the line below to help debug layout issues */
 /*@import './imports/_debug';*/
+
+@import './fonts/fonts';
+
 html {
  box-sizing: border-box;
 }
@@ -93,14 +96,13 @@ html {
 }
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    font-family: moderat_bold;
+  color: #222;
+  line-height: 1.4;
+  font-family: moderat_bold;
 }
 
 body {
- font-size: 16px;
+  font-size: 16px;
 }
 
 /* Content */
