@@ -105,6 +105,13 @@ body {
   font-size: 16px;
 }
 
+/* Hero */
+
+.hero {
+  padding: 140px 0;
+  text-align: center;
+}
+
 /* Content */
 
 .content-wrapper {
