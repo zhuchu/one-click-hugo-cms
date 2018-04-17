@@ -1,5 +1,6 @@
 ---
 title: About Deploy
+subtitle: We design and build digital solutions for your business.
 image: /img/about_image.jpg
 values:
   - heading: Sed ut perspiciatis unde omnis

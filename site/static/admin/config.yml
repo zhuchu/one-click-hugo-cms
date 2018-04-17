@@ -59,6 +59,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "products"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
@@ -72,6 +73,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "values"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
           - {label: Image, name: image, widget: image}
           - label: Values
             name: values
@@ -80,11 +82,13 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Heading, name: heading, widget: string}
               - {label: Text, name: text, widget: text}
               - {label: Image, name: imageUrl, widget: image}
+              - {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
       - file: "site/content/team/_index.md"
         label: "Team Page"
         name: "team"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
           - {label: Image, name: image, widget: image}
           - label: Team
             name: team

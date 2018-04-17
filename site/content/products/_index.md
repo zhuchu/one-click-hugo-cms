@@ -1,5 +1,6 @@
 ---
 title: Deployed Work
+subtitle: We design and build digital solutions for your business.
 image: /img/deploy_work.jpg
 heading: What we offer
 description: >-
@@ -41,4 +42,3 @@ pricing:
     month. Contact us about more details and payment info.
   plans: []
 ---
-
