@@ -17,7 +17,14 @@ values:
       molestias excepturi sint occaecati cupiditate non provident, similique
       sunt in culpa qui officia deserunt mollitia animi, id est laborum et
       dolorum fuga.
-  - heading: Sed ut perspiciatis unde omnis
+  - blurbs:
+      - image: /img/apple-touch-icon.png
+        text: Website Development
+      - image: /img/apple-touch-icon.png
+        text: Interactive Worlds
+      - image: /img/apple-touch-icon.png
+        text: Great Success
+    heading: Sed ut perspiciatis unde omnis
     imageUrl: /img/about_3.jpg
     text: >
       At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
@@ -25,5 +32,5 @@ values:
       molestias excepturi sint occaecati cupiditate non provident, similique
       sunt in culpa qui officia deserunt mollitia animi, id est laborum et
       dolorum fuga.
-blurbs: []
 ---
+
