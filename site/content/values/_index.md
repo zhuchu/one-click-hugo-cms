@@ -25,12 +25,4 @@ values:
       molestias excepturi sint occaecati cupiditate non provident, similique
       sunt in culpa qui officia deserunt mollitia animi, id est laborum et
       dolorum fuga.
-intro:
-  - blurbs:
-      - image: /img/apple-touch-icon.png
-        text: Website Development
-      - image: /img/apple-touch-icon.png
-        text: Interactive Worlds
-      - image: /img/apple-touch-icon.png
-        text: Great Success
 ---
