@@ -25,4 +25,8 @@ values:
       molestias excepturi sint occaecati cupiditate non provident, similique
       sunt in culpa qui officia deserunt mollitia animi, id est laborum et
       dolorum fuga.
+blurbs:
+  - image: /img/illustrations-coffee-gear.svg
+    text: Web development
 ---
+
