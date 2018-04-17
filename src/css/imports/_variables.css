@@ -1,17 +1,17 @@
 :root {
 	/* Colors */
-	--primary: rgba(255, 68, 0, 1);
+	--primary: #0035C8;
 	--highlight: rgba(254, 213, 198, 1);
 	--white: rgba(255, 255, 255, 1);
 	--off-white: rgba(255, 253, 252, 1);
 	--grey-1: rgba(245, 243, 242, 1);
-	--grey-2: rgba(235, 231, 230, 1);
+	--grey-2: #E6E6E6;
 	--grey-3: rgba(89, 87, 86, 1);
 	--grey-4: rgba(66, 64, 64, 1);
 	--black: rgba(43, 37, 35, 1);
 
 	/* Typography */
-	--font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+	--font-family: moderat_bold, space_mono;
 	--line-height: 1.5;
 
 	--font-size: 18px;

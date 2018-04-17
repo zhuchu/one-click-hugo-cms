@@ -85,3 +85,83 @@
 
 /* Uncomment out the line below to help debug layout issues */
 /*@import './imports/_debug';*/
+
+@import './fonts/fonts';
+
+html {
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+html {
+  color: #222;
+  line-height: 1.4;
+  font-family: moderat_bold;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* Hero */
+
+.hero {
+  padding: 140px 0;
+  text-align: center;
+}
+
+/* Content */
+
+.content-wrapper {
+  width: 100%;
+  max-width: 875px;
+  margin: 0 auto;
+}
+
+/* Social Media */
+
+.social-media {
+  display: inline-flex;
+}
+
+.social-media-text {
+  font-size: 0.7em;
+  padding-right: 25px;
+  padding-top: 7px;
+}
+
+.social-media .svg-inline--fa {
+  font-size: 2.5em;
+  padding-right: 5px;
+}
+
+footer {
+  padding: 35px 0;
+  color: white;
+  background-color: blue;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-logo {
+  font-size: 2.37em;
+}
+
+.clearfix {
+  width: 100%;
+  font-size: 1.4em;
+}
+
+.footer-menu ul {
+  padding-left: 0;
+}
+
+.footer-menu li {
+  display: inline;
+  padding-right: 25px;
+}

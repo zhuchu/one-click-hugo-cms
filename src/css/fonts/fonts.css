@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'moderat_bold';
+  src: url('/Moderat-Bold.woff2')format('woff2'),
+       url('/Moderat-Bold.woff')format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+{
+  font-family: 'space_mono';
+  src: url('/SpaceMono-Bold.ttf')format('ttf'),
+       url('/SpaceMono-Italic.ttf')format('ttf'),
+       url('/SpaceMono-BoldItalic.ttf')format('ttf'),
+       url('/SpaceMono-Regular.ttf')format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}

@@ -2,11 +2,14 @@ import webpack from "webpack";
 import path from "path";
 
 export default {
+  devServer: {
+    publicPath: path.resolve(__dirname, 'src', 'css', 'fonts')
+  },
   module: {
     loaders: [
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "file-loader?name=/[hash].[ext]"
+        loader: "file-loader?name=[name].[ext]"
       },
       {
         loader: "babel-loader",
