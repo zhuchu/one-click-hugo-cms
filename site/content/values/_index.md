@@ -17,7 +17,7 @@ values:
       molestias excepturi sint occaecati cupiditate non provident, similique
       sunt in culpa qui officia deserunt mollitia animi, id est laborum et
       dolorum fuga.
-    heading: Sed ut perspiciatis unde omnis
+  - heading: Sed ut perspiciatis unde omnis
     imageUrl: /img/about_3.jpg
     text: >
       At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
