@@ -18,11 +18,11 @@ values:
       sunt in culpa qui officia deserunt mollitia animi, id est laborum et
       dolorum fuga.
   - blurbs:
-      - image: /img/apple-touch-icon.png
+      - image: /img/illustrations-coffee.svg
         text: Website Development
-      - image: /img/apple-touch-icon.png
+      - image: /img/illustrations-meeting-space.svg
         text: Interactive Worlds
-      - image: /img/apple-touch-icon.png
+      - image: /img/illustrations-coffee-gear.svg
         text: Great Success
     heading: Sed ut perspiciatis unde omnis
     imageUrl: /img/about_3.jpg
