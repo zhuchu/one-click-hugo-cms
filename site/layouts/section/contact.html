@@ -12,12 +12,16 @@
 				<div>
 					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
 					<p>{{ .text }}</p>
+					<div class="social-media-small">
+						<ul>
+							{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
+							{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
+							{{ partial "social-icon" (dict "link" "https://www.linkedin.com/company/this-is-deploy/" "svg" "icons-instagram") }}
+						</ul>
+					</div>
 				</div>
 			{{ end }}
 		</div>
-
-		{{ partial "contact-form" . }}
-
 	</div>
 </div>
 

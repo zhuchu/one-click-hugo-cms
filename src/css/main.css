@@ -104,6 +104,17 @@ html {
 body {
   font-size: 16px;
 }
+
+/* Fonts */
+
+.font-main {
+  font-family: moderat_bold;
+}
+
+.font-secondary {
+  font-family: monospace;
+}
+
 /* Main Hero */
 
 .flex-container {
