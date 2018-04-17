@@ -1,5 +1,6 @@
 ---
 title: About Deploy
+subtitle: We design and build digital solutions for your business.
 image: /img/about_image.jpg
 values:
   - heading: Sed ut perspiciatis unde omnis
@@ -24,5 +25,5 @@ values:
       molestias excepturi sint occaecati cupiditate non provident, similique
       sunt in culpa qui officia deserunt mollitia animi, id est laborum et
       dolorum fuga.
+blurbs: []
 ---
-
