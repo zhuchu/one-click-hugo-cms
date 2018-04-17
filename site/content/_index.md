@@ -1,6 +1,8 @@
 ---
-title: 'We are ·Deploy, a creative I.T agency based in Stockholm, Sweden.'
-subtitle: We design and build digital solutions for your business.
+title: >-
+  We are ·Deploy, a creative I.T agency based in Stockholm, Sweden. We design
+  and build digital solutions for your business.
+subtitle: ':)'
 image: /img/header_image.jpg
 blurb:
   heading: Why Kaldi?
