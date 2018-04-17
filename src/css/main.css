@@ -104,12 +104,32 @@ html {
 body {
   font-size: 16px;
 }
+/* Main Hero */
+
+.flex-container {
+  background-image: url('../img/Header_image.jpg');
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  border: solid;
+}
+
+.grid-container {
+  height: 1033px;
+  width: 100%;
+}
 
 /* Hero */
 
 .hero {
-  padding: 140px 0;
   text-align: center;
+}
+
+/* Navigation */
+
+.nav-menu-icon {
+  color: white;
+  font-size: 2em;
 }
 
 /* Content */
