@@ -1,3 +1,20 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Homepage"
+
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 1
+[[menu.main]]
+    name = "Team"
+    url = "/team"
+    weight = 2
+[[menu.main]]
+    name = "Work"
+    url = "/work"
+    weight = 3
+[[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 4
