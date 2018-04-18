@@ -28,5 +28,7 @@ values:
 blurbs:
   - image: /img/illustrations-coffee-gear.svg
     text: Web development
+  - image: /img/illustrations-tutorials.svg
+    text: Interactive parts
 ---
 
