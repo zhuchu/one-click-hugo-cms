@@ -1,22 +1,17 @@
-<nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center relative">
-
-	<!-- Logo -->
-	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-		<img src="/img/deploy_logo_blue.svg" alt="Deploy logo" class="br0 db mb0 w-100"/>
-	</a>
-
-	<!-- Primary Nav -->
-	<ul class="flex b grey-3">
-
-		<a href="#" class="nav-menu-icon"><i class="fas fa-bars"></i></a>
-
-		<!-- <li><a href="/values" class="pa3 no-underline db">About</a></li>
-
-		<li><a href="/team" class="pa3 no-underline db">Team</a></li>
-
-		<li><a href="/products" class="pa3 no-underline db">Work</a></li>
-
-		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li> -->
-	</ul>
-
+<nav>
+  <input id="responsive-menu" type="checkbox">
+	<label for="responsive-menu">
+		<!-- Logo -->
+		<a href="/" id="logo"><img src="/img/deploy_logo_blue.svg" alt="Deploy logo" /></a>
+		<!-- Primary Nav -->
+		<span id="menu-icon"></span>
+  </label>
+  <div id="overlay">
+		<ul>
+			<li><a href="/values">About</a></li>
+			<li><a href="/team">Team</a></li>
+			<li><a href="/products">Work</a></li>
+			<li><a href="/contact">Contact</a></li>
+		</ul>
+  </div>
 </nav>

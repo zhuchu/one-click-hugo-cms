@@ -3,7 +3,7 @@ import path from "path";
 
 export default {
   devServer: {
-    publicPath: path.resolve(__dirname, 'src', 'css', 'fonts')
+    publicPath: path.resolve(__dirname, "src", "css", "fonts")
   },
   module: {
     loaders: [
@@ -29,7 +29,8 @@ export default {
   context: path.join(__dirname, "src"),
   entry: {
     app: ["./js/app"],
-    cms: ["./js/cms"]
+    cms: ["./js/cms"],
+    main: ["./js/main"]
   },
   output: {
     path: path.join(__dirname, "dist"),

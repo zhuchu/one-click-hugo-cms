@@ -87,6 +87,7 @@
 /*@import './imports/_debug';*/
 
 @import './fonts/fonts';
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 
 html {
  box-sizing: border-box;
@@ -115,6 +116,137 @@ body {
   font-family: monospace;
 }
 
+/* Logo */
+
+#logo {
+  font-size: 2em;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+/* Menu Navigation */
+
+nav {
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  text-align: left;
+}
+
+/*** INPUT ***/
+nav input {
+  position: absolute;
+  z-index: -1;
+}
+
+/*** LABEL ***/
+nav label {
+  cursor: pointer;
+  font: 2em/1 'Oswald', sans-serif;
+  padding: 0.5em;
+  background-color: transparent;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  pointer-events: all;
+  z-index: 10;
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+  background: white;
+  border-radius: 0.05em;
+  height: 0.2em;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+#menu-icon {
+  margin-top: 1em;
+  display: inline-block;
+  margin: 0.4em 0;
+  max-width: 1.5em;
+  position: relative;
+}
+
+nav label #menu-icon {
+  float: right;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+  content: '';
+  left: 0;
+  position: absolute;
+}
+
+#menu-icon:before {
+  top: -0.4em;
+}
+
+#menu-icon:after {
+  bottom: -0.4em;
+}
+
+/* Close Icon - Cross bars */
+nav input[type=checkbox]:checked + label #menu-icon {
+  background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+/*** MENU ***/
+/* Overlay */
+
+#overlay {
+  display: none;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+}
+
+nav input:checked ~ #overlay {
+  display: block;
+  background: #e5e5e5;
+}
+
+/* List */
+
+#overlay ul {
+  font-size: 5em;
+  padding: 200px;
+  text-decoration: none;
+}
+
+#overlay ul a {
+  color: white;
+  text-decoration: none;
+}
+
+#overlay ul a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+input:focus+label, textarea:focus+labe {
+  transform: none;
+}
+
 /* Main Hero */
 
 .flex-container {
@@ -134,13 +266,6 @@ body {
 
 .hero {
   text-align: center;
-}
-
-/* Navigation */
-
-.nav-menu-icon {
-  color: white;
-  font-size: 2em;
 }
 
 /* Content */
