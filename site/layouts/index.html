@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
-
-{{ partial "short-text" .Params.blurb}}
+{{ partial "jumbotron-main" (dict "imageUrl" .Params.image "title" .Title) }}
 
 {{ end }}
