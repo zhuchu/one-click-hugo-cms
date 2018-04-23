@@ -309,6 +309,8 @@ input:focus+label, textarea:focus+labe {
   padding-right: 5px;
 }
 
+/* Hover Effect */
+
 .hover-text {
   position: relative;
   display: flex;
@@ -349,6 +351,54 @@ input:focus+label, textarea:focus+labe {
 
 .hover-text:hover .text-block {
   opacity: 1;
+}
+
+/* Contact */
+
+.flex-container-layout {
+  background: white;
+  background-image: url('../img/street.jpg');
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 30px;
+  height: 100vh;
+  width: 100%;
+}
+
+.close-icon {
+  color: blue;
+  font-size: 3em;
+  float: right;
+}
+
+.textbox-alignment {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: 0;
+  height: 100vh;
+}
+
+.grid-container-layout {
+  position: relative;
+  width: 50%;
+  height: 750px;
+  margin: auto;
+  padding-top: 5%;
+  margin-top: 100px;
+}
+
+.grid-container-layout img {
+  float: right;
+  width: 7vw;
+}
+
+.text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: fit-content;
+  font-weight: bold;
 }
 
 footer {
