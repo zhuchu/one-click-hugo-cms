@@ -309,6 +309,48 @@ input:focus+label, textarea:focus+labe {
   padding-right: 5px;
 }
 
+.hover-text {
+  position: relative;
+  display: flex;
+  background-color: #CCCCCC;
+  margin-bottom: 5%;
+}
+
+.hover-text img {
+  opacity: 1;
+  display: block;
+  align-items: flex-end;
+  margin: auto auto 0;
+  width: 80%;
+  height: 90%;
+  transition: .5s ease;
+}
+
+.text-block {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-family: monospace;
+  text-align: center;
+}
+
+.text-block h2 {
+  font-weight: bold;
+}
+
+.hover-text:hover img {
+  opacity: 0.3;
+}
+
+.hover-text:hover .text-block {
+  opacity: 1;
+}
+
 footer {
   padding: 35px 0;
   color: white;
