@@ -1,26 +1,29 @@
 {{ define "main" }}
-
-<div class="ph3 bg-off-white">
-	<div class="center mw6 pv3">
-
-		<img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
-
-		{{ .Content }}
-
-		<div class="flex-ns mb3">
-	        	{{ range .Params.contact_entries }}
-				<div>
-					<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
-					<p>{{ .text }}</p>
-					<div class="social-media-small">
-						<ul>
-							{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
-							{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
-							{{ partial "social-icon" (dict "link" "https://www.linkedin.com/company/this-is-deploy/" "svg" "icons-instagram") }}
-						</ul>
-					</div>
+<div class="flex-container-layout">
+	<a href="/" id="logo"><img src="/img/deploy_logo_white.svg" alt="Deploy logo" /></a>
+	<i class="fas fa-times close-icon"></i>
+		{{ partial "side-bar" . }}
+	<div class="mw7-l mw4-m pv3 textbox-alignment">
+		<div class="grid-container-layout">
+			<img src="/img/stamp.png" alt="stamp" />
+			<div class="f3 primary text">
+				{{ .Content }}
+				<div class="flex-ns mb3">
+								{{ range .Params.contact_entries }}
+						<div>
+							<h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
+							<p>{{ .text }}</p>
+							<div class="social-media-small">
+								<ul>
+									{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
+									{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
+									{{ partial "social-icon" (dict "link" "https://www.linkedin.com/company/this-is-deploy/" "svg" "icons-instagram") }}
+								</ul>
+							</div>
+						</div>
+					{{ end }}
 				</div>
-			{{ end }}
+			</div>
 		</div>
 	</div>
 </div>
