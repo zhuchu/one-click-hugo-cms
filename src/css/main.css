@@ -269,6 +269,19 @@ input:focus+label, textarea:focus+labe {
 
 .hero {
   text-align: center;
+  position: relative;
+}
+
+/* Scroll icon */
+
+.scroll {
+  position: absolute;
+  color: white;
+  font-size: 1.7em;
+  left: 50%;
+  bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Content */
