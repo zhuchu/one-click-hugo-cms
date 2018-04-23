@@ -307,7 +307,6 @@ input:focus+label, textarea:focus+labe {
   transform: rotate(90deg);
 }
 
-
 /* Content */
 
 .content-wrapper {
@@ -340,6 +339,7 @@ input:focus+label, textarea:focus+labe {
   display: flex;
   background-color: #CCCCCC;
   margin-bottom: 5%;
+  z-index: 1;
 }
 
 .hover-text img {
