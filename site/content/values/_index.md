@@ -2,6 +2,15 @@
 title: About Deploy
 subtitle: We design and build digital solutions for your business.
 image: /img/about_image.jpg
+intro:
+  blurbs:
+    - image: /img/illustrations-coffee.svg
+      text: Website development
+    - image: /img/illustrations-tutorials.svg
+      text: Mobile app development
+    - image: /img/illustrations-meeting-space.svg
+      text: User experience design/analysis
+  heading: Our Services
 values:
   - heading: Sed ut perspiciatis unde omnis
     imageUrl: /img/about_1.jpg
@@ -25,11 +34,5 @@ values:
       molestias excepturi sint occaecati cupiditate non provident, similique
       sunt in culpa qui officia deserunt mollitia animi, id est laborum et
       dolorum fuga.
-intro:
-  blurbs:
-    - image: /img/chu_zhu_web.jpg
-      text: Chu Zhu
-    - image: /img/julia_wigselius_web.jpg
-      text: Julia Wigselius
-  heading: Our Services
 ---
+
