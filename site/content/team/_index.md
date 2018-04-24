@@ -7,6 +7,9 @@ intro:
     - heading: Chu Zhu
       image: /img/chu_zhu_web.jpg
       text: CEO
+    - heading: Valérie Pedersén
+      image: /img/valérie_web.png
+      text: All Rounder
     - heading: Julia Wigselius
       image: /img/julia_wigselius_web.jpg
       text: Developer
@@ -21,4 +24,3 @@ intro:
       text: Developer
   heading: Chat to our team
 ---
-

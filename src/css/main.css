@@ -627,11 +627,21 @@ input:focus+label, textarea:focus+labe {
 
 /* Image slider */
 
+.slider {
+    -webkit-overflow-scrolling: touch;
+  scroll-snap-type: mandatory;
+  /* older spec implementation */
+  scroll-snap-destination: 0% 100%;
+  scroll-snap-points-x: repeat(100%);
+
+}
+
 .card-wrapper {
+  scroll-snap-align: center;
 }
 
 .card-box img {
-  height: 552px;
+  height: 500px;
   width: 440px;
   margin-bottom: 0;
   border-radius: 0;
@@ -643,16 +653,22 @@ input:focus+label, textarea:focus+labe {
 }
 
 .card-content {
-  font-size: 1.7em;
-  font-weight: bold;
+  font-size: 1.3em;
   font-family: monospace;
   margin-top: 0;
   background: #0035C8;
   color: white;
   height: 100px;
-  padding: 26px;
-  line-height: 24px;
+  width: auto;
+  padding: 25px;
+  line-height: 30px;
 }
+
+.card-content h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 
 /* Footer */
 

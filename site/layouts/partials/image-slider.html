@@ -2,13 +2,13 @@
 	<div class="ph3 mw7 center">
 		<h2 class="f2 b lh-title mb2">{{.heading}}</h2>
 
-		<div class="flex-ns mhn2-ns mb3">
+		<div class="flex-ns mhn2-ns mb3 slider">
 			{{ range .blurbs }}
       <div class="card-wrapper">
         <div class="card-box">
 					<img src="{{ .image }}" alt="" class="center db mb3">
           <div class="card-content">
-					  <p>{{ .heading }}</p>
+					  <h4>{{ .heading }}</h4>
 						<p>{{ .text }}</p>
           </div>
 				</div>
