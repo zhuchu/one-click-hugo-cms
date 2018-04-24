@@ -628,7 +628,6 @@ input:focus+label, textarea:focus+labe {
 /* Image slider */
 
 .card-wrapper {
-  display:inline-flex;
 }
 
 .card-box img {
@@ -636,6 +635,7 @@ input:focus+label, textarea:focus+labe {
   width: 440px;
   margin-bottom: 0;
   border-radius: 0;
+  max-width: inherit;
 }
 
 .card-box {
@@ -653,6 +653,8 @@ input:focus+label, textarea:focus+labe {
   padding: 26px;
   line-height: 24px;
 }
+
+/* Footer */
 
 footer {
   padding: 35px 0;
