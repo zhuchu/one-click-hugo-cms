@@ -4,10 +4,10 @@ subtitle: We design and build digital solutions for your business.
 image: /img/about_image.jpg
 intro:
   blurbs:
-    - image: /img/person_man.jpg
-      text: Frank Fantastic
-    - image: /img/person_woman.jpg
-      text: Jessica Super
+    - image: /img/chu_zhu_web.jpg
+      text: Chu Zhu
+    - image: /img/julia_wigselius_web.jpg
+      text: Julia Wigselius
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
     java’s origin and support the farmers that grew it. We take coffee
@@ -37,8 +37,6 @@ values:
       molestias excepturi sint occaecati cupiditate non provident, similique
       sunt in culpa qui officia deserunt mollitia animi, id est laborum et
       dolorum fuga.
-blurbs:
-  - image: /img/illustrations-coffee-gear.svg
-    text: What?!
+blurbs: []
 ---
 
