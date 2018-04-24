@@ -36,23 +36,23 @@ export default class ValuesPreview extends React.Component {
       <Jumbotron image={image} title={entry.getIn(["data", "title"])} />
 
       <div className="bg-off-white pv4">
-        <div className="ph3 mw7 center">
-          <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "intro", "heading"])}</h2>
-
-          <div className="flex-ns flex-wrap mhn2-ns mb3">
-            {(entry.getIn(["data", "intro", "blurbs"]) || []).map((blurb, index) => <div className="ph2-ns w-50-ns mb4" key={index}>
-              <img src={blurb.get("image") && getAsset(blurb.get("image"))} alt="" className="center db mb3" style={{width: "240px"}}/>
-              <p>{blurb.get("text")}</p>
-            </div>)}
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-off-white pv4">
         <div className="mw7 center ph3 pt4">
           {values.map(({text, heading, imageUrl}, i) =>
             <MediaBlock key={i} text={text} heading={heading} imageUrl={imageUrl} reverse={i % 2 === 0} />
           )}
+        </div>
+      </div>
+
+      <div className="bg-grey-1 pv4">
+        <div className="ph3 mw7 center">
+          <h2 className="f2 b lh-title mb2 section-title">{entry.getIn(["data", "intro", "heading"])}</h2>
+
+          <div className="flex-ns flex-wrap mhn2-ns mb3">
+            {(entry.getIn(["data", "intro", "blurbs"]) || []).map((blurb, index) => <div className="ph2-ns w-30-ns mb4 icon-grid-block" key={index}>
+              <img src={blurb.get("image") && getAsset(blurb.get("image"))} alt="" className="center db mb3" />
+              <p>{blurb.get("text")}</p>
+            </div>)}
+          </div>
         </div>
       </div>
     </div>;

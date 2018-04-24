@@ -4,12 +4,18 @@ subtitle: We design and build digital solutions for your business.
 image: /img/about_image.jpg
 intro:
   blurbs:
-    - image: /img/illustrations-coffee.svg
+    - image: /img/mac_icon.jpg
       text: Website development
-    - image: /img/illustrations-tutorials.svg
+    - image: /img/iphone_icon.jpg
       text: Mobile app development
-    - image: /img/illustrations-meeting-space.svg
-      text: User experience design/analysis
+    - image: /img/square_icon.jpg
+      text: Branding
+    - image: /img/profile_icon.jpg
+      text: User experience design / analysis
+    - image: /img/graph_icon.jpg
+      text: Infrastructure & process development
+    - image: /img/hero_header_icon.jpg
+      text: User interface design
   heading: Our Services
 values:
   - heading: Sed ut perspiciatis unde omnis
@@ -35,4 +41,3 @@ values:
       sunt in culpa qui officia deserunt mollitia animi, id est laborum et
       dolorum fuga.
 ---
-
