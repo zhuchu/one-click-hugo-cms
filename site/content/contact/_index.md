@@ -12,5 +12,3 @@ contact_entries:
 ## 118 20 Stockholm
 
 ## Sweden
-
-##
