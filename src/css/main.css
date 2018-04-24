@@ -97,7 +97,7 @@ html {
 }
 
 html {
-  color: #222;
+  color: blue;
   line-height: 1.4;
   font-family: moderat_bold;
 }
@@ -330,6 +330,29 @@ input:focus+label, textarea:focus+labe {
 .social-media .svg-inline--fa {
   font-size: 2.5em;
   padding-right: 5px;
+}
+
+/* Second Section */
+
+.section-title {
+  font-family: monospace;
+  padding-bottom: 5%;
+}
+
+.icon-grid-block {
+  flex-grow: 1;
+}
+
+.icon-grid-block img {
+  height: 120px;
+}
+
+.icon-grid-block p {
+  font-family: monospace;
+  text-align: center;
+  font-weight: bold;
+  line-height: 24px;
+  margin: auto 70px;
 }
 
 /* Hover Effect */
