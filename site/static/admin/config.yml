@@ -75,7 +75,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Image, name: image, widget: image}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - label: Values
             name: values
             widget: list
@@ -83,7 +83,6 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Heading, name: heading, widget: string}
               - {label: Text, name: text, widget: text}
               - {label: Image, name: imageUrl, widget: image}
-          - {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
       - file: "site/content/team/_index.md"
         label: "Team Page"
         name: "team"
@@ -91,10 +90,4 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Image, name: image, widget: image}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Heading, name: heading, widget: string}
-              - {label: Text, name: text, widget: text}
-              - {label: Image, name: imageUrl, widget: image}
+          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: "Heading", name: "heading", widget: string}, {label: Text, name: text, widget: text}]}]}
