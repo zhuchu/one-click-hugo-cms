@@ -2,7 +2,7 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
-{{ with .Params.main }}
+{{ with .Params.projects }}
 
 <!-- Image grid -->
 {{ partial "image-grid" . }}
