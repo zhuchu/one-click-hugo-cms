@@ -229,7 +229,7 @@ nav input:checked ~ #overlay {
 
 #overlay ul {
   font-size: 5em;
-  padding: 200px;
+  padding: 25%;
   text-decoration: none;
 }
 
@@ -245,6 +245,24 @@ nav input:checked ~ #overlay {
 
 input:focus+label, textarea:focus+labe {
   transform: none;
+}
+
+@media(max-width: 767px) {
+
+  #menu-icon {
+    max-width: 1em;
+  }
+
+  #overlay {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  #overlay ul {
+    font-size: 3.5em;
+    padding: 25%;
+  }
 }
 
 /* Main Hero */
@@ -263,6 +281,21 @@ input:focus+label, textarea:focus+labe {
   height: 100vh;
   width: 100%;
   text-align: center;
+}
+
+@media(max-width: 767px) {
+  .flex-container {
+    background-image: url('../img/Header_image.jpg');
+    background-size: 100% 100%;
+    width: auto;
+    height: 100vh;
+  }
+
+  .grid-container {
+    font-size: 1.5em;
+    width: auto;
+    height: 100vh;
+  }
 }
 
 /* Hero */
@@ -307,6 +340,12 @@ input:focus+label, textarea:focus+labe {
   transform: rotate(90deg);
 }
 
+@media(max-width: 767px) {
+  .side-bar-container {
+    display: none;
+  }
+}
+
 /* Content */
 
 .content-wrapper {
@@ -330,6 +369,30 @@ input:focus+label, textarea:focus+labe {
 .social-media .svg-inline--fa {
   font-size: 2.5em;
   padding-right: 5px;
+}
+
+@media(max-width: 767px) {
+
+  .social-media {
+    display: inline-flex;
+  }
+
+  .social-media-text {
+    font-size: 0.7em;
+    padding-right: 5%;
+    padding-top: 7px;
+  }
+
+  .social-media li {
+    font-size: 1em;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .social-media li a {
+    color: white;
+    background: none;
+  }
 }
 
 /* Second Section */
@@ -448,6 +511,41 @@ input:focus+label, textarea:focus+labe {
   font-weight: bold;
 }
 
+@media(max-width: 767px) {
+
+  .close-icon {
+    font-size: 2em;
+  }
+
+  .flex-container-layout {
+    background: white;
+    width: auto;
+    height: 80vh;
+  }
+
+  .textbox-alignment {
+    max-width: 100%;
+  }
+
+  .grid-container-layout {
+    margin-top: 10px;
+    font-size: 1.5em;
+    width: auto;
+    height: 50vh;
+  }
+
+  .grid-container-layout img {
+    float: right;
+    width: 10vw;
+  }
+
+  .text {
+    font-size: 1em;
+    left: 5%;
+    bottom: 5%;
+  }
+}
+
 /* Image slider */
 
 .card-wrapper {
@@ -490,6 +588,7 @@ footer a {
 
 .footer-logo {
   font-size: 2.37em;
+  font-weight: bold;
 }
 
 .clearfix {
@@ -504,4 +603,29 @@ footer a {
 .footer-menu li {
   display: inline;
   padding-right: 25px;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 3%;
+  }
+
+  .footer-logo {
+    font-size: 1.37em;
+    font-weight: bold;
+  }
+
+  .clearfix {
+    width: 100%;
+    padding-top: 2%;
+    font-size: 1em;
+  }
+
+  .foorer-menu {
+    padding-bottom: 2%;
+  }
+
+  .footer-menu li {
+    padding-right: 3%;
+  }
 }
