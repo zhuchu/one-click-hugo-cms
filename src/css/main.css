@@ -106,6 +106,10 @@ body {
   font-size: 16px;
 }
 
+a:focus {
+  box-shadow: none;
+}
+
 /* Fonts */
 
 .font-main {
@@ -241,6 +245,10 @@ nav input:checked ~ #overlay {
 #overlay ul a:hover {
   color: blue;
   text-decoration: underline;
+}
+
+#overlay ul a:focus {
+  box-shadow: none;
 }
 
 input:focus+label, textarea:focus+labe {
