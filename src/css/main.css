@@ -628,16 +628,12 @@ input:focus+label, textarea:focus+labe {
 /* Image slider */
 
 .slider {
-    -webkit-overflow-scrolling: touch;
-  scroll-snap-type: mandatory;
-  /* older spec implementation */
-  scroll-snap-destination: 0% 100%;
-  scroll-snap-points-x: repeat(100%);
-
+  overflow-x: auto;
+  flex-wrap: nowrap;
 }
 
 .card-wrapper {
-  scroll-snap-align: center;
+  flex: 0 0 auto;
 }
 
 .card-box img {
