@@ -283,6 +283,10 @@ input:focus+label, textarea:focus+labe {
   text-align: center;
 }
 
+.main-title {
+  padding: 0 40px;
+}
+
 @media(max-width: 767px) {
   .flex-container {
     background-image: url('../img/Header_image.jpg');
@@ -295,6 +299,10 @@ input:focus+label, textarea:focus+labe {
     font-size: 1.5em;
     width: auto;
     height: 100vh;
+  }
+
+  .main-title {
+    padding: 0 5px;
   }
 }
 
