@@ -110,6 +110,13 @@ a:focus {
   box-shadow: none;
 }
 
+.page {
+  color: white;
+}
+
+.contact .left-side-bar {
+  color: white;
+}
 /* Fonts */
 
 .font-main {
@@ -281,7 +288,7 @@ input:focus+label, textarea:focus+labe {
   #menu-icon {
     max-width: 1em;
   }
-  
+
   #overlay ul {
     font-size: 3.5em;
     padding: 25%;

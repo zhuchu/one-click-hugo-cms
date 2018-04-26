@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   {{ partial "head" . }}
-  <body>
+  <body {{ with .Type }} class="{{ . }}" {{ end }}>
     {{ block "main" . }}{{ end }}
     {{ partial "footer" . }}
   </body>
