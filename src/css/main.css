@@ -97,7 +97,7 @@ html {
 }
 
 html {
-  color: blue;
+  color: #0035C8;
   line-height: 1.4;
   font-family: moderat_bold;
 }
@@ -106,6 +106,17 @@ body {
   font-size: 16px;
 }
 
+a:focus {
+  box-shadow: none;
+}
+
+.page {
+  color: white;
+}
+
+.contact .left-side-bar {
+  color: white;
+}
 /* Fonts */
 
 .font-main {
@@ -124,6 +135,10 @@ body {
   cursor: pointer;
   color: white;
   text-decoration: none;
+}
+
+#logo img {
+  float: left;
 }
 
 /* Menu Navigation */
@@ -145,7 +160,7 @@ nav input {
 nav label {
   cursor: pointer;
   font: 2em/1 'Oswald', sans-serif;
-  padding: 0.5em;
+  padding: 1.5em;
   background-color: transparent;
   opacity: 1;
   position: absolute;
@@ -229,7 +244,7 @@ nav input:checked ~ #overlay {
 
 #overlay ul {
   font-size: 5em;
-  padding: 200px;
+  padding: 25%;
   text-decoration: none;
 }
 
@@ -239,18 +254,51 @@ nav input:checked ~ #overlay {
 }
 
 #overlay ul a:hover {
-  color: blue;
+  color: #0035C8;
   text-decoration: underline;
+}
+
+#overlay ul a:focus {
+  box-shadow: none;
 }
 
 input:focus+label, textarea:focus+labe {
   transform: none;
 }
 
+@media(max-width: 767px) {
+
+  #menu-icon {
+    max-width: 1em;
+  }
+
+  #overlay {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  #overlay ul {
+    font-size: 3.5em;
+    padding: 25%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  #menu-icon {
+    max-width: 1em;
+  }
+
+  #overlay ul {
+    font-size: 3.5em;
+    padding: 25%;
+  }
+}
+
 /* Main Hero */
 
 .flex-container {
-  background: blue;
+  background: #0035C8;
   background-image: url('../img/Header_image.jpg');
   background-size: 50% 100%;
   background-repeat: no-repeat;
@@ -263,6 +311,46 @@ input:focus+label, textarea:focus+labe {
   height: 100vh;
   width: 100%;
   text-align: center;
+}
+
+.main-title {
+  padding: 0 25%;
+}
+
+@media(max-width: 767px) {
+  .flex-container {
+    background-image: url('../img/Header_image.jpg');
+    background-size: 100% 100%;
+    width: auto;
+    height: 100vh;
+  }
+
+  .grid-container {
+    font-size: 1.5em;
+    width: auto;
+    height: 100vh;
+  }
+
+  .main-title {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width:1100px) {
+  .flex-container {
+    width: auto;
+    height: 100vh;
+  }
+
+  .grid-container {
+    font-size: 1.5em;
+    width: auto;
+    height: 100vh;
+  }
+
+  .main-title {
+    padding: 0 12%;
+  }
 }
 
 /* Hero */
@@ -290,13 +378,14 @@ input:focus+label, textarea:focus+labe {
   position: absolute;
   font-size: 1.3em;
   font-weight: bold;
-  max-width: 98vw;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  left: 0;
+  margin-top: 5%;
 }
 
 .left-side-bar {
@@ -305,6 +394,12 @@ input:focus+label, textarea:focus+labe {
 
 .right-side-bar {
   transform: rotate(90deg);
+}
+
+@media(max-width: 1000px) {
+  .side-bar-container {
+    display: none;
+  }
 }
 
 /* Content */
@@ -330,6 +425,30 @@ input:focus+label, textarea:focus+labe {
 .social-media .svg-inline--fa {
   font-size: 2.5em;
   padding-right: 5px;
+}
+
+@media(max-width: 767px) {
+
+  .social-media {
+    display: inline-flex;
+  }
+
+  .social-media-text {
+    font-size: 0.7em;
+    padding-right: 5%;
+    padding-top: 7px;
+  }
+
+  .social-media li {
+    font-size: 1em;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .social-media li a {
+    color: white;
+    background: none;
+  }
 }
 
 /* Second Section */
@@ -414,8 +533,8 @@ input:focus+label, textarea:focus+labe {
 }
 
 .close-icon {
-  color: blue;
-  font-size: 3em;
+  color: #0035C8;
+  font-size: 2.5em;
   float: right;
 }
 
@@ -427,25 +546,83 @@ input:focus+label, textarea:focus+labe {
 }
 
 .grid-container-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
-  width: 50%;
-  height: 750px;
+  width: 80%;
+  height: 50vh;
   margin: auto;
-  padding-top: 5%;
-  margin-top: 100px;
+  padding-top: 20%;
 }
 
 .grid-container-layout img {
-  float: right;
+  margin-bottom: 10%;
+  margin-left: auto;
   width: 7vw;
 }
 
 .text {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: fit-content;
   font-weight: bold;
+}
+
+@media screen and (max-width: 425px) {
+
+  .close-icon {
+    font-size: 2em;
+  }
+
+  .flex-container-layout {
+    background: white;
+    width: auto;
+    height: 80vh;
+  }
+
+  .textbox-alignment {
+    max-width: 100%;
+  }
+
+  .grid-container-layout {
+    width: 90%;
+    font-size: 1em;
+  }
+
+  .grid-container-layout img {
+    width: 10vw;
+  }
+
+  .text {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width:1000px) {
+  .close-icon {
+    font-size: 2em;
+  }
+
+  .flex-container-layout {
+    width: auto;
+    height: 80vh;
+  }
+
+  .textbox-alignment {
+    max-width: 50%;
+  }
+
+  .grid-container-layout {
+    width: 80%;
+    font-size: 1em;
+  }
+
+  .grid-container-layout img {
+    width: 8vw;
+  }
+
+  .text {
+    font-size: 1em;
+  }
 }
 
 /* Image slider */
@@ -470,7 +647,7 @@ input:focus+label, textarea:focus+labe {
   font-weight: bold;
   font-family: monospace;
   margin-top: 0;
-  background: blue;
+  background: #0035C8;
   color: white;
   height: 100px;
   padding: 26px;
@@ -480,7 +657,7 @@ input:focus+label, textarea:focus+labe {
 footer {
   padding: 35px 0;
   color: white;
-  background-color: blue;
+  background-color: #0035C8;
 }
 
 footer a {
@@ -490,6 +667,7 @@ footer a {
 
 .footer-logo {
   font-size: 2.37em;
+  font-weight: bold;
 }
 
 .clearfix {
@@ -504,4 +682,56 @@ footer a {
 .footer-menu li {
   display: inline;
   padding-right: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    padding: 3%;
+  }
+
+  .footer-logo {
+    font-size: 1.37em;
+    font-weight: bold;
+  }
+
+  .clearfix {
+    width: 100%;
+    padding-top: 2%;
+    font-size: 1em;
+  }
+
+  .foorer-menu {
+    padding-bottom: 2%;
+  }
+
+  .footer-menu li {
+    display: inline;
+    padding-right: 3%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  footer {
+    padding: 4%;
+  }
+
+  .footer-logo {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+
+  .clearfix {
+    width: 100%;
+    padding-top: 1%;
+    font-size: 1em;
+  }
+
+  .foorer-menu {
+    padding-bottom: 2%;
+  }
+
+  .footer-menu li {
+    display: inline;
+    padding-right: 3%;
+  }
 }
