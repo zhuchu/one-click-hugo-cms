@@ -292,7 +292,7 @@ input:focus+label, textarea:focus+labe {
 }
 
 .main-title {
-  padding: 0 40px;
+  padding: 0 25%;
 }
 
 @media(max-width: 767px) {
@@ -311,6 +311,23 @@ input:focus+label, textarea:focus+labe {
 
   .main-title {
     padding: 0 5px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width:1100px) {
+  .flex-container {
+    width: auto;
+    height: 100vh;
+  }
+
+  .grid-container {
+    font-size: 1.5em;
+    width: auto;
+    height: 100vh;
+  }
+
+  .main-title {
+    padding: 0 12%;
   }
 }
 
@@ -494,7 +511,7 @@ input:focus+label, textarea:focus+labe {
 
 .close-icon {
   color: blue;
-  font-size: 3em;
+  font-size: 2.5em;
   float: right;
 }
 
