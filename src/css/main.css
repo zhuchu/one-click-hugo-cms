@@ -637,8 +637,7 @@ input:focus+label, textarea:focus+labe {
 }
 
 .card-box img {
-  height: 500px;
-  width: 440px;
+  width: 100%;
   margin-bottom: 0;
   border-radius: 0;
   max-width: inherit;
