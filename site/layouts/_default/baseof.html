@@ -5,18 +5,5 @@
     {{ block "main" . }}{{ end }}
     {{ partial "footer" . }}
   </body>
-  <script>
-    let sourceSwap = function () {
-      let $this = $(this);
-      let newSource = $this.data('alt-src');
-      $this.data('alt-src', $this.attr('src'));
-      $this.attr('src', newSource);
-      }
-
-        $(function() {
-            $('img[data-alt-src]').each(function() {
-                new Image().src = $(this).data('alt-src');
-            }).hover(sourceSwap, sourceSwap);
-        });
-  </script>
+  <script src="/site.js"></script>
 </html>
