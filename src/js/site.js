@@ -1,5 +1,5 @@
 function goBack() {
-  window.history.back();
+  document.history.back();
 }
 
 const sourceSwap = function() {
@@ -13,4 +13,10 @@ $(function() {
     $("img[data-alt-src]").each(function() {
       new Image().src = $(this).data("alt-src");
     }).hover(sourceSwap, sourceSwap);
+});
+
+$(document).ready(function() {
+  $(".show_hide").click(function() {
+    $(".slidein").toggleClass("transition");
+  });
 });

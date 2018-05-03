@@ -4,6 +4,6 @@
   <body {{ with .Type }} class="{{ . }}" {{ end }}>
     {{ block "main" . }}{{ end }}
     {{ partial "footer" . }}
+    <script src="/site.js"></script>
   </body>
-  <script src="/site.js"></script>
 </html>
