@@ -1,0 +1,29 @@
+<div class="flex-container-layout">
+	<a href="/" id="logo"><img src="/img/deploy_logo_white.svg" alt="Deploy logo" /></a>
+	<button class="close-icon" onclick="goBack()"><i class="fas fa-times"></i></button>
+		{{ partial "side-bar" . }}
+	<div class="mw7-l mw4-m pv3 textbox-alignment">
+		<div class="grid-container-layout">
+			<img src="/img/stamp.png" alt="stamp" />
+			<div class="f4 primary text">
+				{{ .Content }}
+				<div class="flex-ns mb3">
+								{{ range .Params.contact_entries }}
+						<div>
+							<br />
+							<h4 class="f4-l b lh-title mb2 primary">{{ .heading }}</h4>
+							<p><a href="mailto:valerie@thisisdeploy.com" >{{ .text }}</a></p>
+							<div class="social-media-small">
+								<ul>
+									{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
+									{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
+									{{ partial "social-icon" (dict "link" "https://www.linkedin.com/company/this-is-deploy/" "svg" "icons-instagram") }}
+								</ul>
+							</div>
+						</div>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
