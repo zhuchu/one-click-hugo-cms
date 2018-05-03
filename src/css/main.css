@@ -318,16 +318,17 @@ input:focus+label, textarea:focus+labe {
 }
 
 .slidein {
+  transition: transform 1s ease-in-out;
   position: relative;
   z-index: 1000;
 }
 
 .slidein .right-side-bar {
-  color: blue;
+  color: #0035C8;
 }
 
 .transition {
-  transition: transform 1s ease;
+  transition: transform 1s ease-in-out;
   transform: translateX(-100vw);
 }
 
