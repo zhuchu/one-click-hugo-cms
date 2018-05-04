@@ -308,6 +308,7 @@ input:focus+label, textarea:focus+labe {
     padding: 25%;
   }
 }
+
 /* Main Page Scroll */
 
 .intro-slider {
@@ -341,7 +342,7 @@ input:focus+label, textarea:focus+labe {
   background-repeat: no-repeat;
   background-position: right top;
   width: 100vw;
-  height: 110vh;
+  height: 100vh;
 }
 
 .grid-container {
@@ -390,6 +391,12 @@ input:focus+label, textarea:focus+labe {
   .main-title {
     padding: 0 12%;
   }
+}
+
+/* First Section Intro */
+
+.about-section {
+  color: #0035C8;
 }
 
 /* Hero */
