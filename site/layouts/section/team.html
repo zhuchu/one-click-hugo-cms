@@ -1,6 +1,9 @@
 {{ define "main" }}
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
-{{ partial "image-slider" .Params.intro }}
+
+<div id="section">
+  {{ partial "image-slider" .Params.intro }}
+</div>
 
 {{ end }}

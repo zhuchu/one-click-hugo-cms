@@ -10,13 +10,19 @@ const sourceSwap = function() {
 }
 
 $(function() {
-    $("img[data-alt-src]").each(function() {
-      new Image().src = $(this).data("alt-src");
-    }).hover(sourceSwap, sourceSwap);
+  $("img[data-alt-src]").each(function() {
+    new Image().src = $(this).data("alt-src");
+  }).hover(sourceSwap, sourceSwap);
 });
 
 $(document).ready(function() {
   $(".show_hide").click(function() {
     $(".slidein").toggleClass("transition");
+  });
+
+  $(".scroll").click(function(event) {
+    event.preventDefault();
+    let n = $("#section").height();
+    $("html, body").animate({scrollTop: n}, 800);
   });
 });
