@@ -1,3 +1,5 @@
+import ApiAi from "./api"
+
 function goBack() {
   document.history.back();
 }
@@ -26,3 +28,14 @@ $(document).ready(function() {
     $("html, body").animate({scrollTop: n}, 800);
   });
 });
+
+const client = new ApiAi.ApiAiClient({accessToken: '9e8c9e20ba51493b81dd71fe81153214'})
+.textRequest('test')
+  .then((response) => {
+    debugger;
+
+  })
+  .catch((error) => {
+    debugger;
+
+  })
