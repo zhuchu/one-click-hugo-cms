@@ -25,4 +25,26 @@ $(document).ready(function() {
     let n = $("#section").height();
     $("html, body").animate({scrollTop: n}, 800);
   });
+
+  $(function() {
+    const heroHeight = $(".nav-bar-transition").height();
+    $(document).scroll(function() {
+      if ($(window).scrollTop() > heroHeight) {
+        $("nav label").addClass("navbar-icon");
+      } else {
+        $("nav label").removeClass("navbar-icon");
+      }
+    });
+  });
+
+  $(function() {
+    const heroHeight = $(".nav-bar-transition").height();
+    $(document).scroll(function() {
+      if ($(window).scrollTop() > heroHeight) {
+        $("#logo").addClass("navbar-logo");
+      } else {
+        $("#logo").removeClass("navbar-logo");
+      }
+    });
+  });
 });

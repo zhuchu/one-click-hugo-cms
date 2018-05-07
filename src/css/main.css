@@ -124,13 +124,11 @@ button:focus {
 }
 
 .contact .side-bar-container {
+  color: white;
   margin-top: 5%;
   height: 80vh;
 }
 
-.contact .left-side-bar {
-  color: white;
-}
 /* Fonts */
 
 .font-main {
@@ -158,6 +156,8 @@ button:focus {
 /* Menu Navigation */
 
 nav {
+  position: fixed;
+  left: 0;
   top: 0;
   width: 100%;
   z-index: 9999;
@@ -166,14 +166,31 @@ nav {
 
 /*** INPUT ***/
 nav input {
+  display: none;
   position: absolute;
   z-index: -1;
+}
+
+.navbar-icon #menu-icon {
+  background: blue;
+}
+
+.navbar-icon #menu-icon:before {
+  background: blue;
+}
+
+.navbar-icon #menu-icon:after {
+  background: blue;
+}
+
+.navbar-logo {
+  background-image: url("/img/deploy_logo_blue.svg");
 }
 
 /*** LABEL ***/
 nav label {
   cursor: pointer;
-  font: 2em/1 'Oswald', sans-serif;
+  font: 1.5em/1 'Oswald', sans-serif;
   padding: 1.5em;
   background-color: transparent;
   opacity: 1;
@@ -198,7 +215,7 @@ nav label {
   margin-top: 1em;
   display: inline-block;
   margin: 0.4em 0;
-  max-width: 1.5em;
+  max-width: 1.2em;
   position: relative;
 }
 
@@ -315,7 +332,6 @@ input:focus+label, textarea:focus+labe {
   display: inline-flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  overflow: hidden;
 }
 
 .slidein {
@@ -355,6 +371,7 @@ input:focus+label, textarea:focus+labe {
 
 .main-title {
   padding: 0 25%;
+  text-shadow: 1px 1px 10px #999999;
 }
 
 @media(max-width: 767px) {
