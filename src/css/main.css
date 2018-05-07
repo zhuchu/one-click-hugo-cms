@@ -795,3 +795,10 @@ footer a {
     padding-right: 3%;
   }
 }
+
+/****** CHATBOT ******/
+
+.chatbutton {
+ color: white;
+ background: blue;
+}
