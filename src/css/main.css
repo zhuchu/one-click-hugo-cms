@@ -289,6 +289,11 @@ nav input:checked ~ #overlay {
   text-decoration: underline;
 }
 
+#overlay ul a:active {
+  color: white;
+  text-decoration: none;
+}
+
 #overlay ul a:focus {
   box-shadow: none;
 }
@@ -338,10 +343,6 @@ input:focus+label, textarea:focus+labe {
   transition: transform 1s ease-in-out;
   position: relative;
   z-index: 1000;
-}
-
-.slidein .right-side-bar {
-  color: #0035C8;
 }
 
 .transition {
@@ -438,7 +439,7 @@ input:focus+label, textarea:focus+labe {
 /* Side bar */
 
 .side-bar-container {
-  position: absolute;
+  position: fixed;
   font-size: 1em;
   font-weight: bold;
   width: 100%;
@@ -447,6 +448,7 @@ input:focus+label, textarea:focus+labe {
   justify-content: space-between;
   align-items: center;
   left: 0;
+  z-index: 9000;
 }
 
 .left-side-bar {
@@ -461,6 +463,10 @@ input:focus+label, textarea:focus+labe {
 @media(max-width: 1000px) {
   .side-bar-container {
   }
+}
+
+.text-blue {
+  color: #0035C8;
 }
 
 /* Content */
