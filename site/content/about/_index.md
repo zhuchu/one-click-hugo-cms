@@ -40,4 +40,14 @@ values:
       molestias excepturi sint occaecati cupiditate non provident, similique
       sunt in culpa qui officia deserunt mollitia animi, id est laborum et
       dolorum fuga.
+contact_entries:
+  - heading: Lets start a project together
+    text: valerie@thisisdeploy.com
 ---
+## Deploy
+
+## Brännkyrkagatan 14A
+
+## 118 20 Stockholm
+
+## Sweden

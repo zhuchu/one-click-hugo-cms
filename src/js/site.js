@@ -1,7 +1,3 @@
-function goBack() {
-  document.history.back();
-}
-
 const sourceSwap = function() {
   const $this = $(this);
   const newSource = $this.data("alt-src");

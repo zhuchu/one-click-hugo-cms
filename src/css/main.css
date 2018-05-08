@@ -124,9 +124,24 @@ button:focus {
 }
 
 .contact .side-bar-container {
-  color: white;
   margin-top: 5%;
   height: 80vh;
+}
+
+.contact .left-side-bar {
+  color: white;
+}
+
+.contact #menu-icon {
+  background: #0035C8;
+}
+
+.contact #menu-icon:before {
+  background: #0035C8;
+}
+
+.contact #menu-icon:after {
+  background: #0035C8;
 }
 
 /* Fonts */
