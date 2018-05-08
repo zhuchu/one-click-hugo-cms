@@ -114,6 +114,8 @@ button:focus {
   box-shadow: none;
 }
 
+/* Page Special Styling */
+
 .page {
   color: white;
 }
@@ -304,9 +306,9 @@ nav input:checked ~ #overlay {
   text-decoration: underline;
 }
 
-#overlay ul a:active {
-  color: white;
-  text-decoration: none;
+.active {
+  color: #0035C8;
+  text-decoration: underline;
 }
 
 #overlay ul a:focus {

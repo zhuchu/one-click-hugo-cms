@@ -46,4 +46,13 @@ $(document).ready(function() {
       }
     });
   });
+
+  $(function() {
+    const activePage = window.location.pathname;
+    if($(".menu a").attr("href") === activePage) {
+      $("a").addClass("active")
+    } else {
+      $("a").removeClass("active")
+    }
+  });
 });
