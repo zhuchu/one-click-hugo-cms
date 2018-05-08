@@ -41,9 +41,9 @@ $(document).ready(function() {
     const heroHeight = $(".nav-bar-transition").height();
     $(document).scroll(function() {
       if ($(window).scrollTop() > heroHeight) {
-        $("#logo").addClass("navbar-logo");
+          $("#logo img").attr("src", "/img/deploy_logo_blue.svg");
       } else {
-        $("#logo").removeClass("navbar-logo");
+        $("#logo img").attr("src", "/img/deploy_logo_white.svg");
       }
     });
   });
