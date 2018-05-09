@@ -6,12 +6,12 @@ html {
   @media (--breakpoint-large) {
     font-size: var(--font-size-l);
   }
-  background-color: var(--black);
+  background-color: var(--primary);
 }
 
 
 body {
-  font-family: var(--font-family);
+  font-family: moderat_bold;
   font-size: var(--spacing-medium);
   line-height: var(--line-height);
   font-weight: var(--body-font-weight);

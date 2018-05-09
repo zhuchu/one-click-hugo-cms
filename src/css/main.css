@@ -90,16 +90,12 @@
 @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 
 html {
- box-sizing: border-box;
+  color: #0035C8;
+  line-height: 1.4;
+  box-sizing: border-box;
 }
 *, *:before, *:after {
  box-sizing: inherit;
-}
-
-html {
-  color: #0035C8;
-  line-height: 1.4;
-  font-family: moderat_bold;
 }
 
 body {
@@ -536,7 +532,7 @@ input:focus+label, textarea:focus+labe {
 /* Second Section */
 
 .section-title {
-  font-family: monospace;
+  font-family: moderat_bold;
   padding-bottom: 5%;
 }
 
@@ -727,7 +723,7 @@ input:focus+label, textarea:focus+labe {
 }
 
 .card-box {
-  padding: 37px;
+  padding-left: 37px;
 }
 
 .card-content {
@@ -751,6 +747,22 @@ input:focus+label, textarea:focus+labe {
   z-index: 2;
 }
 
+.swipe {
+  font-family: monospace;
+  font-weight: bold;
+  float: right;
+  opacity: 0.3;
+  color: #000000;
+}
+
+.swipe .svg-inline--fa.fa-w-16 {
+  height: initial;
+  width: 0.5em;
+}
+
+.swipe .svg-inline--fa {
+  font-size: 300%;
+}
 /* Footer */
 
 footer {
