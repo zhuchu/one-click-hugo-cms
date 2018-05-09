@@ -17,14 +17,13 @@ $(document).ready(function() {
     $(".right-side-bar").toggleClass("text-blue");
   });
 
-  $(".scroll").click(function(event) {
-    event.preventDefault();
-    let n = $("#section").height();
-    $("html, body").animate({scrollTop: n}, 800);
+  $(".scroll").click(function() {
+    const heroHeight = $(".nav-bar-transition").outerHeight();
+    $("html, body").animate({scrollTop: heroHeight}, 800);
   });
 
   $(function() {
-    const heroHeight = $(".nav-bar-transition").height();
+    const heroHeight = $(".nav-bar-transition").outerHeight();
     $(document).scroll(function() {
       if ($(window).scrollTop() > heroHeight) {
         $("nav label").addClass("navbar-icon");
@@ -37,7 +36,7 @@ $(document).ready(function() {
   });
 
   $(function() {
-    const heroHeight = $(".nav-bar-transition").height();
+    const heroHeight = $(".nav-bar-transition").outerHeight();
     $(document).scroll(function() {
       if ($(window).scrollTop() > heroHeight) {
         $("#logo img").attr("src", "/img/deploy_logo_blue.svg");
