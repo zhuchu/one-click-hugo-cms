@@ -299,7 +299,7 @@ nav input:checked ~ #overlay {
   text-decoration: underline;
 }
 
-.active {
+#overlay .active {
   color: #0035C8;
   text-decoration: underline;
 }
@@ -446,6 +446,10 @@ input:focus+label, textarea:focus+labe {
   margin-left: auto;
 }
 
+.scroll .svg-inline--fa {
+  color: white;
+}
+
 /* Side bar */
 
 .side-bar-container {
@@ -495,7 +499,7 @@ input:focus+label, textarea:focus+labe {
 }
 
 .social-media-text {
-  font-size: 0.7em;
+  font-size: 0.6em;
   padding-right: 25px;
   padding-top: 7px;
 }
@@ -503,6 +507,7 @@ input:focus+label, textarea:focus+labe {
 .social-media .svg-inline--fa {
   font-size: 2.5em;
   padding-right: 5px;
+  fill: blue;
 }
 
 @media(max-width: 767px) {
@@ -533,7 +538,12 @@ input:focus+label, textarea:focus+labe {
 
 .section-title {
   font-family: moderat_bold;
+  font-size: 1.7em;
   padding-bottom: 5%;
+}
+
+.section-title .svg-inline--fa {
+  font-size: 50%;
 }
 
 .icon-grid-block {
@@ -541,7 +551,7 @@ input:focus+label, textarea:focus+labe {
 }
 
 .icon-grid-block img {
-  height: 120px;
+  height: 80px;
 }
 
 .icon-grid-block p {
@@ -583,11 +593,18 @@ input:focus+label, textarea:focus+labe {
   -ms-transform: translate(-50%, -50%);
   color: white;
   font-family: monospace;
+  font-size: 1.33em;
   text-align: center;
 }
 
 .text-block h2 {
+  font-size: 1.5em;
   font-weight: bold;
+}
+
+.hover-text:hover {
+  transition: .5s ease;
+  background: rgba(0,53,200,0.8);
 }
 
 .hover-text:hover img {
@@ -766,7 +783,7 @@ input:focus+label, textarea:focus+labe {
 /* Footer */
 
 footer {
-  padding: 35px 0;
+  padding: 40px 0;
   color: white;
   background-color: #0035C8;
 }
@@ -779,6 +796,7 @@ footer a {
 .footer-logo {
   font-size: 2.37em;
   font-weight: bold;
+  padding-bottom: 30px;
 }
 
 .clearfix {

@@ -4,19 +4,19 @@
 	<div class="mw7-l mw4-m pv3 textbox-alignment">
 		<div class="grid-container-layout">
 			<img src="/img/stamp.png" alt="stamp" />
-			<div class="f4 primary text">
+			<div class="f3 primary text">
 				{{ .Content }}
 				<div class="flex-ns mb3">
 								{{ range .Params.contact_entries }}
-						<div>
+						<div class="f4-l b lh-title mb2 primary">
 							<br />
-							<h4 class="f4-l b lh-title mb2 primary">{{ .heading }}</h4>
+							<p>{{ .heading }}</p>
 							<p><a href="mailto:valerie@thisisdeploy.com" >{{ .text }}</a></p>
 							<div class="social-media-small">
 								<ul>
-									{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
-									{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
 									{{ partial "social-icon" (dict "link" "https://www.linkedin.com/company/this-is-deploy/" "svg" "icons-instagram") }}
+									{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
+									{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
 								</ul>
 							</div>
 						</div>
