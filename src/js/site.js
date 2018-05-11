@@ -47,12 +47,31 @@ $(document).ready(function() {
     });
   });
 
-  $(function() {
-    const activePage = window.location.pathname;
-    if($(".menu a").attr("href") === activePage) {
-      $("a").addClass("active")
-    } else {
-      $("a").removeClass("active")
-    }
-  });
+  // $(function() {
+  //   const activePage = window.location.pathname;
+  //   if($(".menu a").attr("href") === activePage) {
+  //     $("a").addClass("active")
+  //   } else {
+  //     $("a").removeClass("active")
+  //   }
+  // });
+
+  // $(".left-side-bar").load(function() {
+  //   console.log("jquery bit");
+  //   sideBarShowPageName()
+  // })
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const activePage = document.body.className;
+  const displayCurrentPage = activePage.charAt(0).toUpperCase() + activePage.slice(1);
+  let displaySideBarName;
+  if (activePage === "page") {
+    displaySideBarName = "We are deploy";
+  } else if (activePage === "contact") {
+    displaySideBarName = "We are deploy";
+  } else {
+    displaySideBarName = displayCurrentPage;
+  }
+  document.getElementById("side-bar-name").innerHTML = displaySideBarName;
 });

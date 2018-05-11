@@ -4,12 +4,11 @@
 	<div class="mw7-l mw4-m pv3 textbox-alignment">
 		<div class="grid-container-layout">
 			<img src="/img/stamp.png" alt="stamp" />
-			<div class="f3 primary text">
+			<div class="primary text-address">
 				{{ .Content }}
-				<div class="flex-ns mb3">
+				<div class="flex-ns mb3 text-contact">
 								{{ range .Params.contact_entries }}
-						<div class="f4-l b lh-title mb2 primary">
-							<br />
+						<div class="f4-l b mb2 primary">
 							<p>{{ .heading }}</p>
 							<p><a href="mailto:valerie@thisisdeploy.com" >{{ .text }}</a></p>
 							<div class="social-media-small">
