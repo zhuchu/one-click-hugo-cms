@@ -30,7 +30,8 @@ export default {
   entry: {
     app: ["./js/app"],
     cms: ["./js/cms"],
-    site: ["./js/site"]
+    site: ["./js/site"],
+    api: ["./js/api"]
   },
   output: {
     path: path.join(__dirname, "dist"),
