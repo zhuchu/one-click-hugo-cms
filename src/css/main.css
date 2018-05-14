@@ -499,6 +499,11 @@ input:focus+label, textarea:focus+labe {
   color: #0035C8;
 }
 
+.text-white {
+  transition: all 0.2s ease;
+  color: white;
+}
+
 /* Content */
 
 .content-wrapper {
@@ -799,6 +804,7 @@ input:focus+label, textarea:focus+labe {
   font-family: monospace;
   font-weight: bold;
   float: right;
+  padding-right: 12%;
   opacity: 0.3;
   color: #000000;
 }

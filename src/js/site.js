@@ -15,6 +15,7 @@ $(document).ready(function() {
   $(".show_hide").click(function() {
     $(".slidein").toggleClass("transition");
     $(".right-side-bar").toggleClass("text-blue");
+    $(".left-side-bar").toggleClass("text-white");
     $("nav label").toggleClass("navbar-icon");
   });
 
