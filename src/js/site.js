@@ -1,7 +1,3 @@
-function goBack() {
-  document.history.back();
-}
-
 const sourceSwap = function() {
   const $this = $(this);
   const newSource = $this.data("alt-src");
@@ -18,11 +14,63 @@ $(function() {
 $(document).ready(function() {
   $(".show_hide").click(function() {
     $(".slidein").toggleClass("transition");
+    $(".right-side-bar").toggleClass("text-blue");
+    $(".left-side-bar").toggleClass("text-white");
+    $("nav label").toggleClass("navbar-icon");
   });
 
-  $(".scroll").click(function(event) {
-    event.preventDefault();
-    let n = $("#section").height();
-    $("html, body").animate({scrollTop: n}, 800);
+  $(".scroll").click(function() {
+    const heroHeight = $(".nav-bar-transition").outerHeight();
+    $("html, body").animate({scrollTop: heroHeight}, 800);
   });
+
+  $(function() {
+    const heroHeight = $(".nav-bar-transition").outerHeight();
+    $(document).scroll(function() {
+      if ($(window).scrollTop() > heroHeight) {
+        $("nav label").addClass("navbar-icon");
+        $(".side-bar-container").addClass("text-blue");
+      } else {
+        $("nav label").removeClass("navbar-icon");
+        $(".side-bar-container").removeClass("text-blue");
+      }
+    });
+  });
+
+  $(function() {
+    const heroHeight = $(".nav-bar-transition").outerHeight();
+    $(document).scroll(function() {
+      if ($(window).scrollTop() > heroHeight) {
+        $("#logo img").attr("src", "/img/deploy_logo_blue.svg");
+      } else {
+        $("#logo img").attr("src", "/img/deploy_logo_white.svg");
+      }
+    });
+  });
+
+  $(function() {
+    let activePage = document.body.className;
+    activePage = activePage.charAt(0).toUpperCase() + activePage.slice(1);
+
+    $(".menu li").each(function() {
+      const menuItem = this.innerText;
+      if (activePage === menuItem) {
+        $(this).addClass("activePageBlue");
+      }
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const activePage = document.body.className;
+  const displayCurrentPage = activePage.charAt(0).toUpperCase() + activePage.slice(1);
+  let displaySideBarName;
+  if (activePage === "page") {
+    displaySideBarName = "We are deploy";
+  } else if (activePage === "contact") {
+    displaySideBarName = "We are deploy";
+  } else {
+    displaySideBarName = displayCurrentPage;
+  }
+  document.getElementById("side-bar-name").innerHTML = displaySideBarName;
 });

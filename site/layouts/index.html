@@ -1,10 +1,10 @@
 {{ define "main" }}
-<div class="intro-slider">
+<div class="intro-slider nav-bar-transition">
   <div id="section" class="slide">
     {{ partial "jumbotron-main" (dict "imageUrl" .Params.image "title" .Title) }}
   </div>
   <div class="slidein">
-    {{ partial "contact-info" . }}
+    {{ partial "contact-slide" . }}
   </div>
 </div>
 

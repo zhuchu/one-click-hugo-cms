@@ -8,4 +8,14 @@ projects:
     image: /img/products-grid1.jpg
     heading: CaterBee
     text: Identity & Webpage design
+contact_entries:
+  - heading: Lets start a project together
+    text: valerie@thisisdeploy.com
 ---
+## Deploy
+
+## Brännkyrkagatan 14A
+
+## 118 20 Stockholm
+
+## Sweden
