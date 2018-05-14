@@ -291,8 +291,11 @@ nav input:checked ~ #overlay {
   text-decoration: none;
 }
 
-#overlay ul a {
+#overlay ul {
   color: white;
+}
+
+.menu a {
   text-decoration: none;
 }
 
@@ -301,7 +304,7 @@ nav input:checked ~ #overlay {
   text-decoration: underline;
 }
 
-#overlay .active {
+.activePageBlue {
   color: #0035C8;
   text-decoration: underline;
 }
@@ -674,14 +677,12 @@ input:focus+label, textarea:focus+labe {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  padding-top: 5%;
   width: 80%;
-  height: 50vh;
   margin: auto;
-  padding-top: 20%;
 }
 
 .grid-container-layout img {
-  margin-bottom: 10%;
   margin-left: auto;
   width: 7vw;
 }

@@ -47,6 +47,18 @@ $(document).ready(function() {
       }
     });
   });
+
+  $(function() {
+    let activePage = document.body.className;
+    activePage = activePage.charAt(0).toUpperCase() + activePage.slice(1);
+
+    $(".menu li").each(function() {
+      const menuItem = this.innerText;
+      if (activePage === menuItem) {
+        $(this).addClass("activePageBlue");
+      }
+    });
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function() {
