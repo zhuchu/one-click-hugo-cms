@@ -110,18 +110,20 @@ button:focus {
   box-shadow: none;
 }
 
-/* Page Special Styling */
+/****** Page Special Styling ******/
 
 .page {
   color: white;
 }
 
 .page .side-bar-container {
+  padding-left: 0px;
   margin-top: 5%;
   height: 80%;
 }
 
 .contact .side-bar-container {
+  padding-left: 0px;
   margin-top: 5%;
   height: 80vh;
 }
@@ -142,7 +144,7 @@ button:focus {
   background: #0035C8;
 }
 
-/* Fonts */
+/****** Fonts ******/
 
 .font-main {
   font-family: moderat_bold;
@@ -152,7 +154,7 @@ button:focus {
   font-family: monospace;
 }
 
-/* Logo */
+/****** Logo ******/
 
 #logo {
   font-size: 2em;
@@ -167,7 +169,7 @@ button:focus {
   transition: all 0.2s ease;
 }
 
-/* Menu Navigation */
+/****** Menu Navigation ******/
 
 nav {
   position: fixed;
@@ -178,7 +180,7 @@ nav {
   text-align: left;
 }
 
-/*** INPUT ***/
+/* INPUT */
 nav input {
   display: none;
   position: absolute;
@@ -197,7 +199,7 @@ nav input {
   background: #0035C8;
 }
 
-/*** LABEL ***/
+/* LABEL */
 nav label {
   cursor: pointer;
   font: 1.5em/1 'Oswald', sans-serif;
@@ -263,7 +265,7 @@ nav input[type=checkbox]:checked + label #menu-icon:after {
   transform: rotate(45deg);
 }
 
-/*** MENU ***/
+/****** MENU ******/
 /* Overlay */
 
 #overlay {
@@ -284,7 +286,7 @@ nav input:checked ~ #overlay {
 /* List */
 
 #overlay ul {
-  font-size: 5em;
+  font-size: 4.5em;
   padding: 25%;
   text-decoration: none;
 }
@@ -341,12 +343,23 @@ input:focus+label, textarea:focus+labe {
   }
 }
 
-/* Main Page Scroll */
+/****** Slide ******/
+/* Contact Page Slide in */
 
 .intro-slider {
   display: inline-flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+}
+
+.slider-container {
+  column-count: 2;
+  column-width: 100vw;
+  overflow-x: auto;
+}
+
+.slide {
+  width: 100vw;
 }
 
 .slidein {
@@ -360,6 +373,7 @@ input:focus+label, textarea:focus+labe {
   transform: translateX(-100vw);
 }
 
+/****** Main Page ******/
 /* Main Hero */
 
 .flex-container {
@@ -453,6 +467,7 @@ input:focus+label, textarea:focus+labe {
 /* Side bar */
 
 .side-bar-container {
+  padding-left: 30px;
   position: fixed;
   font-size: 1em;
   font-weight: bold;

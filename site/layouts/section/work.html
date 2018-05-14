@@ -1,15 +1,20 @@
 {{ define "main" }}
+<div class="intro-slider">
+  <div class="slide">
+    {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
-<div id="section">
-  {{ with .Params.projects }}
+    <div id="section">
+      {{ with .Params.projects }}
 
-  <!-- Image grid -->
-  {{ partial "image-grid" . }}
-  {{ end }}
-</div>
-<div class="slidein">
-  {{ partial "contact-slide" . }}
+      <!-- Image grid -->
+      {{ partial "image-grid" . }}
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="slidein">
+    {{ partial "contact-slide" . }}
+  </div>
 </div>
 
 {{ end }}

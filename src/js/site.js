@@ -46,20 +46,6 @@ $(document).ready(function() {
       }
     });
   });
-
-  // $(function() {
-  //   const activePage = window.location.pathname;
-  //   if($(".menu a").attr("href") === activePage) {
-  //     $("a").addClass("active")
-  //   } else {
-  //     $("a").removeClass("active")
-  //   }
-  // });
-
-  // $(".left-side-bar").load(function() {
-  //   console.log("jquery bit");
-  //   sideBarShowPageName()
-  // })
 });
 
 document.addEventListener("DOMContentLoaded", function() {
